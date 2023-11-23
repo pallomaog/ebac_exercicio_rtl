@@ -8,6 +8,8 @@ describe('Teste para o componente PostComment', () => {
         expect(screen.getByText('Comentar')).toBeInTheDocument();
     });
 
+    
+
     it('Deve adicionar dois comentários', () => {
         render(<PostComment/>);
 
@@ -27,4 +29,6 @@ describe('Teste para o componente PostComment', () => {
 
         expect(screen.getAllByTestId('comment-element')).toHaveLength(2);
     });
+
+    
 });
